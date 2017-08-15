@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 # Low-Budget Password Strength Estimation
 
-[![Travis-CI Build Status](https://travis-ci.org/jumpingrivers/zxcvbnR.svg?branch=master)](https://travis-ci.org/<USERNAME>/zxcvbnR)
+[![Travis-CI Build Status](https://travis-ci.org/jumpingrivers/zxcvbnR.svg?branch=master)](https://travis-ci.org/jumpingrivers/zxcvbnR)
 [![Coverage Status](https://img.shields.io/codecov/c/github/jumpingrivers/zxcvbnR/master.svg)](https://codecov.io/github/jumpingrivers>/zxcvbnR?branch=master)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/zxcvbnR)](https://cran.r-project.org/package=zxcvbnR)
 
@@ -41,6 +41,6 @@ check_password("#rstats is great")
 ```
 The function also returns a list containing other details
 ```{r}
-res =check_password("ABCDE")
+res = check_password("ABCDE")
 res$feedback
 ```
