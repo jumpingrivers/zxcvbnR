@@ -4,9 +4,9 @@ Low-Budget Password Strength Estimation
 
 [![Travis-CI Build Status](https://travis-ci.org/jumpingrivers/zxcvbnR.svg?branch=master)](https://travis-ci.org/jumpingrivers/zxcvbnR) [![Coverage Status](https://img.shields.io/codecov/c/github/jumpingrivers/zxcvbnR/master.svg)](https://codecov.io/github/jumpingrivers%3E/zxcvbnR?branch=master) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/zxcvbnR)](https://cran.r-project.org/package=zxcvbnR)
 
-[zxcvbn](https://github.com/dropbox/zxcvbn) is a password strength estimator inspired by password crackers. \[zxcvbnR\] provides an R interface to this package.
+[zxcvbn](https://github.com/dropbox/zxcvbn) is a password strength estimator inspired by password crackers. `zxcvbnR` provides an R interface to this Javascript library.
 
-Through pattern matching and conservative estimation, it recognizes and weighs 30k common passwords, common names and surnames according to US census data, popular English words from Wikipedia and US television and movies, and other common patterns like dates, repeats (aaa), sequences (abcd), keyboard patterns (qwertyuiop), and l33t speak.\#\# Example
+Through pattern matching and conservative estimation, it recognizes and weighs 30k common passwords, common names and surnames according to US census data, popular English words from Wikipedia and US television and movies, and other common patterns like dates, repeats (aaa), sequences (abcd), keyboard patterns (qwertyuiop), and l33t speak.
 
 ### Installation
 
