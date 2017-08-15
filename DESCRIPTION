@@ -1,0 +1,18 @@
+Package: zxcvbnR
+Type: Package
+Title: Password Strength Estimator
+Version: 0.1.0
+Authors@R: person(given="Colin", family="Gillespie",
+    email="colin@jumpingrivers.com", role = c("aut", "cre"))
+Maintainer: Colin Gillespie <colin@jumpingrivers.com>
+Description: A thin wrapper around the DropBox Javascript password strength estimator
+  library. Provides information on how crackable a password is.
+URL: https://github.com/jumpingrivers/zxcvbnR, https://github.com/dropbox/zxcvbn/
+BugReports: https://github.com/jumpingrivers/zxcvbnR
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: V8
+Roxygen: list(markdown = TRUE)
+Suggests: covr

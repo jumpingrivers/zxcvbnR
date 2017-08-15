@@ -1,0 +1,46 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# Low-Budget Password Strength Estimation
+
+[![Travis-CI Build Status](https://travis-ci.org/jumpingrivers/zxcvbnR.svg?branch=master)](https://travis-ci.org/<USERNAME>/zxcvbnR)
+[![Coverage Status](https://img.shields.io/codecov/c/github/jumpingrivers/zxcvbnR/master.svg)](https://codecov.io/github/jumpingrivers>/zxcvbnR?branch=master)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/zxcvbnR)](https://cran.r-project.org/package=zxcvbnR)
+
+[zxcvbn](https://github.com/dropbox/zxcvbn) is a password strength estimator inspired by password crackers. [zxcvbnR] provides an R interface to this package.
+
+Through pattern matching and conservative estimation, it recognizes and weighs 30k common passwords, common names and surnames according to US census data, popular English words from Wikipedia and US television and movies, and other common patterns like dates, repeats (aaa), sequences (abcd), keyboard patterns (qwertyuiop), and l33t speak.## Example
+
+### Installation
+
+Currently the package isn't on CRAN. To install
+```{r eval = FALSE}
+devtools::install_github("jumpingrivers/zxcvbnR")
+```
+
+### Usage
+
+The main function in the package is `check_password()`
+```{r example}
+library("zxcvbnR")
+check_password("ABCDE")
+check_password("#rstats is great")
+```
+The function also returns a list containing other details
+```{r}
+res =check_password("ABCDE")
+res$feedback
+```
