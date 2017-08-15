@@ -2,3 +2,11 @@
 language: R
 sudo: false
 cache: packages
+
+addons:
+  apt:
+    packages:
+      - libv8-dev
+
+r_github_packages:
+  - jimhester/covr
